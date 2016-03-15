@@ -30,7 +30,7 @@ void loop() {
     if(digitalRead(power_switch) == HIGH) {
       digitalWrite(regulator_state, LOW);
       // let the Pi get some time to boot up
-      delay(2000);
+      delay(3000);
     }
     
     piState = digitalRead(pi_UART_TX);
